@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173c32" />
+    <meta name="description" content="Descubre los sabores insignia de Las Tres Hermanos, una cafetería con 50 años de historia en el centro de Tegucigalpa." />
+    <title>Las Tres Hermanos | Café de Tegucigalpa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">Desde hace 50 años, una pausa con sabor a Tegucigalpa</div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Las Tres Hermanos, inicio">
+        <span class="brand-mark" aria-hidden="true">3</span>
+        <span class="brand-name">LAS TRES<br />HERMANOS</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#carta">La carta</a>
+        <a href="#historia">Nuestra historia</a>
+        <a href="#visitanos">Visítanos</a>
+      </nav>
+      <a class="header-cta" href="#carta">Ver productos <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Centro de Tegucigalpa · Desde 1974</p>
+          <h1 id="hero-title">Tu pausa<br />tiene <em>historia.</em></h1>
+          <p class="hero-description">Café recién hecho, recetas de siempre y ese ratito que hace mejor el día.</p>
+          <a class="button button-dark" href="#carta">Explorar la carta <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><strong>50</strong><span>años compartiendo<br />la mesa</span></div>
+        </div>
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1500&q=88" alt="Barista preparando café recién molido" fetchpriority="high" />
+          <div class="image-caption"><span class="caption-dot"></span> Hecho con calma. Servido con cariño.</div>
+          <span class="hero-stamp" aria-hidden="true">UN CLÁSICO<br />DE LA CASA</span>
+        </div>
+      </section>
+
+      <section class="menu-section" id="carta" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-green"><span></span> Lo bueno se comparte</p>
+            <h2 id="menu-title">Favoritos <em>de la casa</em></h2>
+          </div>
+          <p class="section-intro">Quince razones para hacer una pausa.<br class="desktop-break" /> Encuentra tu próximo antojo.</p>
+        </div>
+
+        <div class="menu-tools">
+          <div class="filters" role="group" aria-label="Filtrar productos por categoría">
+            <button class="filter-button is-active" type="button" data-category="todos" aria-pressed="true">Todo <span>15</span></button>
+            <button class="filter-button" type="button" data-category="cafe" aria-pressed="false">Café</button>
+            <button class="filter-button" type="button" data-category="bebidas" aria-pressed="false">Bebidas</button>
+            <button class="filter-button" type="button" data-category="reposteria" aria-pressed="false">Repostería</button>
+            <button class="filter-button" type="button" data-category="salado" aria-pressed="false">Salado</button>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Buscar productos</span>
+            <input id="product-search" type="search" placeholder="¿Qué se te antoja?" autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite">15 productos</p>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos ese antojo. Prueba otra búsqueda.</p>
+        <p class="price-note">Precios de muestra en lempiras; pueden actualizarse en el archivo <code>script.js</code>.</p>
+      </section>
+
+      <section class="story-band" id="historia" aria-labelledby="story-title">
+        <div class="story-number" aria-hidden="true">1974</div>
+        <div class="story-copy">
+          <p class="eyebrow"><span></span> Una mesa en el corazón de la ciudad</p>
+          <h2 id="story-title">Medio siglo.<br /><em>La misma buena taza.</em></h2>
+          <p>Hay lugares que terminan siendo parte de la rutina. Desde hace cinco décadas, aquí se encuentran las conversaciones de oficina, el café de media tarde y los sabores que siempre dan ganas de volver.</p>
+          <a class="text-link" href="#visitanos">Pasa por la casa <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1100&q=85" alt="Interior acogedor de una cafetería" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="visitanos">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#inicio" aria-label="Las Tres Hermanos, volver al inicio">
+          <span class="brand-mark" aria-hidden="true">3</span>
+          <span class="brand-name">LAS TRES<br />HERMANOS</span>
+        </a>
+        <p>Un clásico del centro.<br />Un café para todos los días.</p>
+      </div>
+      <div class="footer-detail">
+        <p class="footer-label">Encuéntranos</p>
+        <p>Centro de Tegucigalpa<br />Honduras</p>
+      </div>
+      <div class="footer-detail">
+        <p class="footer-label">Ven por tu favorito</p>
+        <a class="footer-link" href="#carta">Explorar los 15 productos <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom"><span>© <span id="current-year"></span> Las Tres Hermanos</span><span>Hecho para una buena pausa.</span></div>
+    </footer>
+  </body>
+</html>
